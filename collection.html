@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body class="p-0 m-0">
+    <!-- offer notification-->
+     <div class="bg-gray-800 flex justify-center items-center">
+        <h1 class=" text-xs p-2 text-white">Sign Up and <span class="font-bold">GET 20% OFF</span> for your first Order</h1>
+    <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-2 text-white cursor-pointer gap-3">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+      </svg>
+      </p>
+     </div>
+<!-- NAV BAR -->
+    <nav class="bg-white p-3 flex items-center justify-between shadow-xl sticky top-0 z-10" style="font-family: 'Poppins', system-ui;">
+        <h2 class="font-bold text-2xl text-gray-800 inline-block">Nostra</h2>
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <ul class="text-black justify-between items-center gap-10 hidden md:flex">
+            <li class="list-none">
+                <a class="hover:underline hover:text-black " href="index.html">Home</a>
+            </li>
+            <li class="list-none">
+                <a class="hover:underline hover:text-black" href="#arrival">New Arrival</a>
+            </li>
+            <li class="list-none">
+                <a class="hover:underline hover:text-black" href="#wanted">Most Wanted</a>
+            </li>
+            <li class="list-none">
+                <a class="hover:underline hover:text-black" href="./collection.html">Collections</a>
+            </li>
+            <li class="list-none">
+                <a class="hover:underline hover:text-black" href="./contactUs.html">ContactUs</a>
+            </li>
+        </ul>
+    </nav>
+<!-- SIDENAV BAR -->
+     <section id="sidenav" class="bg-gray-800 fixed z-20 top-0 transition-all duration-1000" style="width: 50%;height: 100vh;left:-50%">
+        <div class="text-right p-5">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" id="closenav" class="h-6 text-white inline cursor-pointer">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+        </div>
+        <ul class="text-white flex flex-col items-center gap-5">
+            <li class="list-none">
+                <a class="hover:underline hover:text-white " href="index.html">Home</a>
+            </li>
+            <li class="list-none">
+                <a class="hover:underline hover:text-white" href="#arrival.html">New Arrival</a>
+            </li>
+            <li class="list-none">
+                <a class="hover:underline hover:text-white" href="#wanted.html">Most Wanted</a>
+            </li>
+            <li class="list-none">
+                <a class="hover:underline hover:text-white" href="./collection.html">Collections</a>
+            </li>
+            <li class="list-none">
+                <a class="hover:underline hover:text-white" href="./contactUs.html">ContactUs</a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- dresses -->
+    <section class="grid grid-cols-2 relative gap-8 md:grid md:grid-cols-2">
+        <!-- Left Column -->
+        <div class="md:ml-20">
+            <div class="my-4">
+                <h2 class="font-bold text-2xl p-4">Occasion</h2>
+                <div class="p-4">
+                    <input type="checkbox" name="Summer" id="summercheck">Summer <br>
+                    <input type="checkbox" name="Party" id="partycheck">Party <br>
+                    <input type="checkbox" name="Beach" id="beachcheck">Beach
+                </div>
+            </div>
+            <div>
+                <h2 class="font-bold text-2xl p-4">Colors</h2>
+                <div class="p-4">
+                    <input type="checkbox" name="Red" id="">Red <br>
+                    <input type="checkbox" name="Blue" id="">Blue <br>
+                    <input type="checkbox" name="White" id="">White <br>
+                    <input type="checkbox" name="Green" id="">Green
+                </div>
+            </div>
+            <div>
+                <h2 class="font-bold text-2xl p-4">Arrivals</h2>
+                <div class="p-4">
+                    <input type="checkbox" name="New" id="">New <br>
+                    <input type="checkbox" name="Old" id="">Old <br>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Right Column -->
+        <div class="pr-20">
+            <div class="relative w-full max-w-lg my-10 mx-auto">
+                <input id="search" class="border-2 border-solid border-black rounded-xl h-10 w-full pl-4" placeholder="Search" type="text">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 absolute top-2 right-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                </svg>
+            </div>
+            <div id="container" class="grid grid-cols-2 gap-1 mt-8 md:grid md:grid-cols-3">
+                <div id="summer">
+                    <img class="w-full h-32 md:h-44 object-cover" src="./images/f1.jpg" alt="">
+                    <h2 class="font-bold text-center mt-2">Floral Summer Shirt</h2>
+                    <p class="text-center">&#8377;200</p>
+                </div>
+                <div id="summer">
+                    <img class="w-full h-32 md:h-44 object-cover" src="./images/f2.jpg" alt="">
+                    <h2 class="font-bold text-center mt-2">Summer Green</h2>
+                    <p class="text-center">&#8377;250</p>
+                </div>
+                <div id="party">
+                    <img class="w-full h-32 md:h-44 object-cover" src="./images/f3.jpg" alt="">
+                    <h2 class="font-bold text-center mt-2">Party Floral Shirt</h2>
+                    <p class="text-center">&#8377;300</p>
+                </div>
+                <div id="summer">
+                    <img class="w-full h-32 md:h-44 object-cover" src="./images/f4.jpg" alt="">
+                    <h2 class="font-bold text-center mt-2">Floral Summer Shirt</h2>
+                    <p class="text-center">&#8377;350</p>
+                </div>
+                <div id="beach">
+                    <img class="w-full h-32 md:h-44 object-cover" src="./images/f5.jpg" alt="">
+                    <h2 class="font-bold text-center mt-2">Beach Shirt</h2>
+                    <p class="text-center">&#8377;200</p>
+                </div>
+                <div id="party">
+                    <img class="w-full h-32 md:h-44 object-cover" src="./images/f6.jpg" alt="">
+                    <h2 class="font-bold text-center mt-2">Shirt Party Red</h2>
+                    <p class="text-center">&#8377;200</p>
+                </div>
+                <div id="party">
+                    <img class="w-full h-32 md:h-44 object-cover" src="./images/f2.jpg" alt="">
+                    <h2 class="font-bold text-center mt-2">Shirt Party Red</h2>
+                    <p class="text-center">&#8377;200</p>
+                </div>
+                <div id="party">
+                    <img class="w-full h-32 md:h-44 object-cover" src="./images/n7.jpg" alt="">
+                    <h2 class="font-bold text-center mt-2">Shirt Party Red</h2>
+                    <p class="text-center">&#8377;200</p>
+                </div>
+                <div id="party">
+                    <img class="w-full h-32 md:h-44 object-cover" src="./images/n8.jpg" alt="">
+                    <h2 class="font-bold text-center mt-2">Shirt Party Red</h2>
+                    <p class="text-center">&#8377;200</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Vertical Line -->
+        <div class="absolute inset-y-0 top-10 max-h-screen left-64 w-0.5 bg-black md:absolute md:ml-64"></div>
+    </section>
+    <section class="bg-white dark:bg-gray-900">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+            <div class="mx-auto max-w-screen-md sm:text-center">
+                <h2 class="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white">Sign up for our newsletter</h2>
+                <p class="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400">Stay up to date with the roadmap progress, announcements and exclusive discounts feel free to sign up with your email.</p>
+                <form action="#">
+                    <div class="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
+                        <div class="relative w-full">
+                            <label for="email" class="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email address</label>
+                            <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                                <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                            </div>
+                            <input class="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Enter your email" type="email" id="email" required="">
+                        </div>
+                        <div>
+                            <button type="submit" class="py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-blue-600 border-primary-600 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300">We care about the protection of your data. <a href="#" class="font-medium text-primary-600 dark:text-primary-500 hover:underline">Read our Privacy Policy</a>.</div>
+                </form>
+            </div>
+        </div>
+      </section>
+    <script src="./collection.js"></script>
+</body>
+</html>
